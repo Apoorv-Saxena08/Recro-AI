@@ -1,7 +1,5 @@
 import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
-console.log("Interview page loaded ✅");
-
 // Extract params from URL
 const params = new URLSearchParams(window.location.search);
 const prompt = params.get("prompt");
@@ -16,7 +14,7 @@ const finalPrompt = `You are a professional interviewer. Ask ${interview} interv
 const chatBox = document.getElementById("chatBox");
 const userInput = document.getElementById("userInput");
 
-const API_KEY = "AIzaSyDsgQpaauu0jI2rVvPY-tpngsiYG15ix_4";
+const API_KEY = "YOUR_API_KEY";
 const MODEL_NAME = "gemini-2.5-flash";
 
 const genAI = new GoogleGenerativeAI(API_KEY);
@@ -87,3 +85,4 @@ window.endChat = function () {
 window.sendMessage = sendMessage;
 
 startChat();
+
