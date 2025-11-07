@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recro AI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="brand"><h1>Recro AI</h1></div>
+      <div class="tabs">
+      </div>
+    </div>
+
+    <div class="basic">
+      <h2 class="intro">
+        Transform your preparation into performance with
+        <span class="highlight">Recro AI</span>. 
+        <br><br> Your personal AI-powered
+        interview companion.
+      </h2>
+    </div>
+    <br>
+    <hr />
+
+    <div class="input-box">
+        <h2>Enter the Job Role or Custom Prompt</h2>
+      <div class="take-input">
+        
+        <textarea
+          id="promptInput"
+          class="prompt-box"
+          placeholder="e.g. I want to practice for a React Developer interview with system design questions..."
+        ></textarea>
+      </div>
+
+      <div class="dropdowns">
+        <select id="experience">
+          <option value="">Select Experience</option>
+          <option value="0">0 Years (Fresher)</option>
+          <option value="1">1 Year</option>
+          <option value="2">2 Years</option>
+          <option value="3+">3+ Years</option>
+        </select>
+
+        <select id="interviewType">
+          <option value="">Select Interview Type</option>
+          <option value="technical">Technical</option>
+          <option value="HR">HR</option>
+          <option value="managerial">Managerial</option>
+          <option value="behavioral">Behavioral</option>
+        </select>
+      </div>
+
+      <div class="btn">
+            <button onclick="submitPrompt()">Start Interview</button>
+      </div>
+      
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
